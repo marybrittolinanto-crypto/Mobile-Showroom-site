@@ -1,0 +1,367 @@
+/* ==========================================
+           1. குளோபல் ரீசெட் & பிரீமியம் பேக்ரவுண்ட்
+           ========================================== */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f4f7f6 0%, #e9eff1 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+            width: 100%;
+            color: #333;
+        }
+
+        /* ==========================================
+           2. ஹெடர் & நேவிகேஷன் (Modern Theme)
+           ========================================== */
+        header {
+            text-align: center;
+            border: none;
+            background-color: #0A3D62; /* பிரீமியம் டார்க் ப்ளூ */
+            color: white;
+            padding: 35px 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: clamp(24px, 4vw, 38px);
+            letter-spacing: 1.5px;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        header h3 {
+            font-size: clamp(14px, 1.8vw, 18px);
+            text-transform: uppercase;
+            opacity: 0.85;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #445069;
+            font-weight: 600;
+            font-size: 15px;
+            padding: 18px 25px;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        nav a:hover {
+            color: #0A3D62;
+            background-color: #f5f7fa;
+            border-bottom: 3px solid #0A3D62;
+        }
+
+        /* ==========================================
+           3. வீடியோ & இமேஜ் மார்கியூஸ்
+           ========================================== */
+        video {
+            margin-top: 0;
+            width: 100% !important;
+            max-width: 100%;
+            height: auto !important;
+            display: block;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        marquee {
+            background-color: #ffffff;
+            padding: 10px 0;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.03);
+            margin: 15px 0;
+            display: block;
+        }
+
+        marquee img {
+            padding: 10px 25px;
+            height: 120px;
+            object-fit: contain;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.05));
+        }
+
+        h2 {
+            text-align: center;
+            margin: 45px 0 25px 0;
+            color: #0A3D62;
+            font-size: clamp(22px, 3vw, 30px);
+            position: relative;
+            font-weight: 700;
+            clear: both;
+        }
+
+        /* ==========================================
+           4. மொபைல் பிராண்ட்ஸ் பாக்ஸ்கள் (Elegant Cards)
+           ========================================== */
+        .brand1, .brand2 {
+            background-color: #0F1E36; /* செம்ம கிளாஸான டீப் நேவி ப்ளூ */
+            color: #ffffff;
+            border-radius: 16px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            padding: 30px 40px;
+            width: 300px;
+            min-height: 260px;
+            margin: 15px auto;
+            display: inline-block;
+            vertical-align: top;
+            float: none;
+            box-shadow: 0 10px 25px rgba(15, 30, 54, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .brand1:hover, .brand2:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 + .brand1 {
+            margin-left: calc(50% - 320px); /* லேப்டாப்பில் கச்சிதமாக நடுவில் பிரியும் */
+        }
+
+        .brand1 + .brand2 {
+            margin-left: 40px;
+        }
+
+        /* ==========================================
+           5. அக்ஸஸரீஸ் பாக்ஸ்கள் பகுதி (#class)
+           ========================================== */
+        #class {
+            background-color: #e4ecf0;
+            padding: 50px 20px;
+            text-align: center;
+            clear: both;
+            margin-top: 30px;
+        }
+
+        .acc1, .acc2 {
+            background-color: #1A3154;
+            color: #ffffff;
+            border-radius: 16px;
+            border: none;
+            padding: 30px 35px;
+            width: 310px;
+            margin: 15px auto;
+            display: inline-block;
+            vertical-align: top;
+            float: none;
+            text-align: left;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .acc1 {
+            margin-right: 30px;
+        }
+
+        .acc2 {
+            background-color: #213A61; /* லேசான மேட்சிங் ப்ளூ மாற்றம் */
+        }
+
+        ul {
+            list-style-position: inside;
+        }
+
+        ul li {
+            font-size: 16px;
+            letter-spacing: 0.5px;
+        }
+
+        ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        /* ==========================================
+           6. டிஸ்கவுண்ட் டேபிள் (Clean Modern Table)
+           ========================================== */
+        .call {
+            width: 100%;
+            padding: 20px;
+            clear: both;
+        }
+
+        .call table {
+            margin: 25px auto;
+            width: 100%;
+            max-width: 850px;
+            text-align: center;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden; /* கார்னர் வளைவிற்காக */
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+        }
+
+        .call th, .call td {
+            padding: 14px 18px;
+            border: 1px solid #eef2f5;
+        }
+
+        .call th {
+            background-color: #0A3D62;
+            color: white;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* டேபிள் வரிகளுக்கு ஆல்டர்நேட் சாம்பல் நிறம் */
+        .call tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        .call tr:hover {
+            background-color: #f1f5f9;
+        }
+
+        /* Accessories ரோ-விற்கான ஸ்பெஷல் ஹைலைட் */
+        .call tr th[colspan] {
+            background-color: #27ae60; /* அழகான மென்மையான பச்சை நிறம் */
+            font-weight: bold;
+        }
+
+        .call h2 {
+            margin-top: 40px;
+        }
+
+        /* ==========================================
+           7. விதிமுறைகள் செக்ஷன் (Terms & Conditions)
+           ========================================== */
+        .terms {
+            width: 90%;
+            max-width: 950px;
+            margin: 50px auto;
+            padding: 35px;
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+            border-left: 5px solid #0A3D62; /* இடப்பக்கம் ஒரு பிரீமியம் கோடு */
+        }
+
+        .terms h2 {
+            width: auto !important;
+            margin: 0 0 15px 0 !important;
+            text-align: left;
+            color: #0A3D62;
+        }
+
+        .terms h3 {
+            margin-bottom: 15px;
+            color: #555;
+            font-size: 16px;
+        }
+
+        .terms p {
+            margin-bottom: 15px;
+            line-height: 1.7;
+            text-align: justify;
+            color: #666;
+            font-size: 14.5px;
+        }
+
+        .logos {
+            width: 100%;
+            margin: 40px 0 0 0;
+        }
+
+        /* ==========================================
+           8. ஃபூட்டர் & காப்பிரைட்ஸ் (Footer & Icons)
+           ========================================== */
+        footer {
+            background-color: #0F1E36; /* கார்டுகளின் அதே தீம் ப்ளூ */
+            color: #ffffff;
+            padding: 40px 20px 20px 20px;
+            text-align: center;
+            clear: both;
+        }
+
+        footer h4 {
+            margin-bottom: 8px;
+            font-weight: 400;
+            color: #cbd5e1;
+            font-size: 15px;
+        }
+
+        .web, .web1, .web2, .web3 {
+            width: auto;
+            float: none;
+            display: inline-block;
+            margin: 20px 12px 10px 12px;
+        }
+
+        .web h4 a, .web1 h4 a, .web2 h4 a, .web3 h4 a {
+            color: #ffffff;
+            transition: opacity 0.2s;
+        }
+
+        .web h4 a:hover, .web1 h4 a:hover, .web2 h4 a:hover, .web3 h4 a:hover {
+            opacity: 0.7;
+        }
+
+        /* பழைய பச்சையை தூக்கிவிட்டு கொண்டு வரப்பட்ட கிளாஸிக் ஃபூட்டர் கோடு */
+        .rights {
+            margin-top: 0;
+            text-align: center;
+            background-color: #0A3D62;
+            color: #ffffff;
+            padding: 16px;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            clear: both;
+        }
+
+        /* ==========================================
+           9. அதிநவீன மொபைல் ரெஸ்பான்சிவ் மீடியா குறிப்புகள்
+           ========================================== */
+        @media (max-width: 768px) {
+            nav {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); /* மொபைலில் 2x2 கிரிடாக மாறும் */
+            }
+            
+            nav a {
+                font-size: 14px;
+                padding: 15px 10px;
+                border-bottom: none;
+                border: 1px solid #f0f4f8;
+            }
+
+            h2 + .brand1, .brand1 + .brand2 {
+                margin-left: auto;
+            }
+
+            .brand1, .brand2, .acc1, .acc2 {
+                display: block;
+                width: 90%;
+                max-width: 340px;
+                margin: 20px auto !important;
+            }
+
+            .acc1 {
+                margin-right: auto;
+            }
+
+            .call table {
+                font-size: 13px;
+            }
+            
+            .call th, .call td {
+                padding: 10px 8px;
+            }
+            
+            .terms {
+                padding: 20px;
+            }
+        }

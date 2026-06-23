@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profeena Mobile Showroom - Contact & Terms</title>
+    <style>
+        /* Global Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* Background Gradient Color */
+            background: radial-gradient(circle, rgb(207, 43, 43), rgb(111, 111, 231));
+            background-attachment: fixed;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            padding-bottom: 50px;
+        }
+
+        /* Header Style */
+        header {
+            text-align: center;
+            background-color: #0A3D62; /* Dark Blue */
+            color: white;
+            padding: 25px 20px;
+            border-bottom: 4px dashed #7724e4;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+        }
+
+        header h3 {
+            font-weight: 400;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        /* Main Responsive Container */
+        .main-container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Top Layout: Contact Form & Address Grid */
+        .contact-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        /* Card Layout */
+        .card {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+        }
+
+        .card h2 {
+            color: #0A3D62;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #7724e4;
+            padding-bottom: 5px;
+            font-size: 1.6rem;
+        }
+
+        .card h3 {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        /* Input Fields Styling */
+        form label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: #333;
+        }
+
+        form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        form input:focus {
+            border-color: #7724e4;
+            outline: none;
+        }
+
+        form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #0A3D62;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background 0.3s;
+        }
+
+        form button:hover {
+            background-color: #7724e4;
+        }
+
+        /* Address Text */
+        .address h4 {
+            color: #e74c3c;
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+        }
+
+        /* Bottom Section: Terms Layout */
+        .terms-section {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+            margin-top: 30px;
+        }
+
+        .terms-section h3 {
+            color: #0A3D62;
+            margin: 25px 0 10px 0;
+            font-size: 1.3rem;
+            border-left: 4px solid #7724e4;
+            padding-left: 10px;
+        }
+
+        .terms-section h3:first-of-type {
+            margin-top: 0;
+        }
+
+        .terms-section p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #444;
+            text-align: justify;
+            white-space: pre-line;
+        }
+
+        /* TV / Big Monitors Layout */
+        @media (min-width: 1400px) {
+            .main-container {
+                max-width: 1400px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PROFEENA MOBILE SHOWROOM</h1>
+        <h3>near old busstand,tirupur</h3>
+    </header>
+
+    <div class="main-container">
+
+        <div class="contact-section">
+            
+            <div class="card">
+                <h2>CONTACT US</h2>
+                <h3>WRITE US</h3>
+                <form>
+                    <label for="name">name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                    
+                    <label for="phone">phone number</label>
+                    <input type="number" id="phone" name="phone" placeholder="Enter phone number">
+                    
+                    <label for="subject">subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Enter subject">
+                    
+                    <label for="reason">reason</label>
+                    <input type="text" id="reason" name="reason" placeholder="Enter reason">
+                    
+                    <button type="submit">submit</button>
+                </form>
+            </div>
+
+            <div class="card address">
+                <h2>CONTACT DETAILS</h2>
+                <h4>PROFENAA AGENCY LTD.</h4>
+                <p>Near Old Bustand,<br>Tirupur - 643052</p>
+            </div>
+
+        </div>
+        <div class="terms-section">
+            <h3>TERMS AND CONDITIONS FOR PAYMENT</h3>
+            <p>Please make the payment to the respective courier delivery person after you have received the product. The invoice for the purchase will be in the package and a mail for the order placed will be sent out to you.</p>
+            
+            <h3>PAYMENT OPTIONS IN PROFENAA</h3>
+            <p>Credit Card, Debit Card, Net Banking, Cash Card, Cash on Delivery, RTGS & NEFT (within India).
+            
+            <strong>You will not be able to make any payment using the below mentioned options:</strong>
+            Mobile Payment options (mChek), Payment by DD.
+            
+            All major Credit cards are accepted. All Visa credit cards National (India). All major Visa Master and Maestro Debit cards are accepted.</p>
+            
+            <h3>DEBIT CARD</h3>
+            <p>We accept below debit cards:
+            Visa, Master Card, Maestro, Rupay</p>
+            
+            <h3>CREDIT CARD</h3>
+            <p>We accept below credit cards:
+            Visa, Master Card, American Express, JCB, American Express Eze Click, EBS Credit Card Screen Shot.</p>
+            
+            <h3>CASH CARD</h3>
+            <p>We accept below cash cards:
+            ICash, ItzCash, Jio Money, MobiKwik, PayCash, PayZapp, YPayCash</p>
+            
+            <h3>EMI</h3>
+            <p>Our Supported EMI Options are:
+            HDFC Bank Visa Card, HDFC Bank Master Card, CITI Bank Visa Card, CITI Bank Master Card, Bajaj Finserv (No Cost EMI).
+            
+            Shopping at www.sathya.store is 100% safe. We are a Verisign Secured SSL certified site which gives maximum security to the users. All the online payments are made through our payment gateway EBS which is approved by McAfee Secure, Verisign by Norton secure, Pci Security Standards and ISO 27001 Certified.</p>
+        </div>
+        </div> </body>
+</html>

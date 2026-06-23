@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profeena Mobile Showroom - Categories</title>
+    <style>
+        /* Reset defaults */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* Background-ah full screen-ku cover aagura mari potachu */
+            background-image: url('/mobileshowroom/images/mb3.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #111;
+            padding-bottom: 50px;
+        }
+
+        /* Header Style */
+        header {
+            text-align: center;
+            background-color: #0A3D62; /* Dark Blue */
+            color: white;
+            padding: 25px 20px;
+            border-bottom: 4px dashed #7724e4;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+        }
+
+        header h3 {
+            font-weight: 400;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .main-title {
+            text-align: center;
+            margin: 35px 0 20px;
+            font-size: 2.5rem;
+            color: #0A3D62;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+        }
+
+        /* Master Grid Container
+           Desktop-la multi-column, Mobile-la single column matrix automatic-ah maarum */
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Category Card Item Design */
+        .category-card {
+            background-color: rgba(255, 255, 255, 0.92); /* Background transparency code look-kaga */
+            backdrop-filter: blur(5px);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            border-left: 5px solid #7724e4; /* Card border indicator */
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+            background-color: rgba(255, 255, 255, 0.98);
+        }
+
+        .category-card h2 {
+            font-size: 1.35rem;
+            color: #0A3D62;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 6px;
+        }
+
+        .category-card ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .category-card li {
+            color: #1b8a24; /* Soft dark green for readability */
+            font-size: 1.05rem;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+
+        /* Big Monitor optimization (TV/Workstation) */
+        @media (min-width: 1400px) {
+            .categories-grid {
+                max-width: 1400px;
+                grid-template-columns: repeat(4, 1fr); /* Fixed 4 grid columns on big screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>PROFEENA MOBILE SHOWROOM</h1>
+        <h3>near old busstand,tirupur</h3>
+    </header>
+
+    <h1 class="main-title">Categories</h1>
+
+    <div class="categories-grid">
+
+        <div class="category-card">
+            <h2>Televisions</h2>
+            <ul>
+                <li>LED TV</li>
+                <li>HD Ready</li>
+                <li>Full HD</li>
+                <li>Ultra HD</li>
+                <li>QLED</li>
+                <li>OLED</li>
+                <li>QNED</li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <h2>Air Conditioners</h2>
+            <ul>
+                <li>Window AC</li>
+                <li>Split AC</li>
+                <li>Cassette AC</li>
+                <li>Inverter</li>
+                <li>Ductable AC</li>
+                <li>Tower AC</li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <h2>Refrigerators</h2>
+            <ul>
+                <li>Single Door</li>
+                <li>Double Door</li>
+                <li>French Door</li>
+                <li>Side By Side Refrigerator</li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <h2>Washing Machines</h2>
+            <ul>
+                <li>Semi Automatic</li>
+                <li>Top Loading</li>
+                <li>Front Loading</li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <h2>Kitchen Appliances</h2>
+            <ul>
+                <li>Microwave Oven</li>
+                <li>Wet Grinder</li>
+                <li>Induction Stove</li>
+                <li>Gas Stove</li>
+                <li>Cooker</li>
+                <li>Mixers</li>
+                <li>Chimney</li>
+                <li>Coffee Maker</li>
+                <li>Toaster</li>
+                <li>Juicer</li>
+                <li>Electric Kettle</li>
+                <li>Kadai</li>
+                <li>Cookware</li>
+                <li>Exhaust Fan</li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <h2>Audio & Video</h2>
+            <ul>
+                <li>Home Theatre</li>
+                <li>Home Theater Audio</li>
+                <li>DJ System</li>
+                <li>Sound Bar</li>
+                <li>DVD Player</li>
+                <li>Speakers</li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <h2>Mobiles</h2>
+            <ul>
+                <li>Feature Mobile</li>
+                <li>Smart Phone</li>
+                <li>iPhone</li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <h2>Cooling & Heating</h2>
+            <ul>
+                <li>Air Cooler</li>
+                <li>Room Heater</li>
+                <li>Water Heater</li>
+                <li>Air purifier</li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <h2>Personal Care & Grooming</h2>
+            <ul>
+                <li>IRON Box</li>
+                <li>Flask</li>
+                <li>Personal Grooming</li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <h2>Travel & Lifestyle</h2>
+            <ul>
+                <li>Travel Bag & Backpack</li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <h2>Dishwasher</h2>
+            <ul>
+                <li>Dishwasher</li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <h2>Computers & Tablets</h2>
+            <ul>
+                <li>Laptops</li>
+                <li>Desktop PCs</li>
+                <li>Tablets</li>
+                <li>Kindle</li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <h2>Utility Appliances</h2>
+            <ul>
+                <li>Fan</li>
+                <li>Water Dispenser</li>
+                <li>Water Purifier</li>
+                <li>Vacuum cleaner</li>
+                <li>Stabilizer</li>
+                <li>UPS and Battery</li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <h2>Mobile Accessories</h2>
+            <ul>
+                <li>Headphones & Headsets</li>
+                <li>Mobile Chargers</li>
+                <li>Screenguards & Mobile Covers</li>
+                <li>Power Banks</li>
+                <li>Other Accessories</li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <h2>Computer Accessories</h2>
+            <ul>
+                <li>Laptop Accessories</li>
+                <li>Printers</li>
+                <li>Hard Disk</li>
+                <li>USB</li>
+                <li>Keyboard</li>
+                <li>Projector</li>
+                <li>Wi-Fi Routers</li>
+                <li>Pen Drives</li>
+                <li>RAM</li>
+                <li>Mouse and Other Accessories</li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <h2>Security Solutions</h2>
+            <ul>
+                <li>CCTV DVR</li>
+                <li>CCTV Camera</li>
+                <li>CCTV Accessories</li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <h2>Remote & DTH Accessories</h2>
+            <ul>
+                <li>Remote Controls</li>
+                <li>DTH Accessories for Appliances</li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <h2>Stands</h2>
+            <ul>
+                <li>Stands</li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <h2>Gadgets & Gaming</h2>
+            <ul>
+                <li>Gaming & Accessories</li>
+                <li>Smartwatch</li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <h2>Deep Freezer</h2>
+            <ul>
+                <li>Deep Freezer</li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <h2>Camera & Accessories</h2>
+            <ul>
+                <li>Camera</li>
+                <li>Camera Accessories</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

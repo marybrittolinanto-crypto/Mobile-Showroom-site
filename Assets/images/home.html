@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profeena Mobile Showroom - Home</title>
+    <style>
+        /* Global Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.7;
+            padding-bottom: 50px;
+        }
+
+        /* Header - Fully Responsive */
+        header {
+            text-align: center;
+            background-color: #0A3D62; /* Dark Blue */
+            color: white;
+            padding: 30px 20px;
+            border-bottom: 4px dashed #7724e4;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        header h3 {
+            font-weight: 400;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Main Content Wrapper */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.3rem;
+            margin: 40px 0 20px 0;
+            color: #0A3D62;
+            text-transform: uppercase;
+        }
+
+        /* Paragraph Text Formatting */
+        p.content-text {
+            text-transform: capitalize;
+            font-size: 1.05rem;
+            color: #555;
+            text-align: justify;
+            margin-bottom: 30px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Image Gallery Matrix (Magic starts here) 
+           Mobile-la 1 column, Tablet-la 2 columns, TV/Laptop-la 4 columns-ah auto-ah maarum */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        /* Image Card Styling */
+        .img-wrapper {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .img-wrapper:hover {
+            transform: translateY(-5px); /* Chonnu mela thukkum hover pannungapo */
+        }
+
+        .img-wrapper img {
+            width: 100%;
+            height: 250px; /* Ella image-um ore size-la iruka */
+            object-fit: cover; /* Image amungipogama iruka */
+            border-radius: 6px;
+            background-color: #e0e0e0; /* Image load aagalana gray background kaatum */
+        }
+
+        /* Media Queries for Extra Large Screens (TV / Big Monitors) */
+        @media (min-width: 1400px) {
+            .container {
+                max-width: 1400px;
+            }
+            header h1 {
+                font-size: 3rem;
+            }
+            p.content-text {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>PROFEENA MOBILE SHOWROOM</h1>
+        <h3>Near Old Busstand, Tirupur</h3>
+    </header>
+
+    <div class="container">
+        
+        <h2>Home</h2>
+        
+        <p class="content-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio fugiat rem, inventore nobis hic voluptate sapiente officiis, voluptatem obcaecati reprehenderit est totam sint nam perspiciatis optio repellat suscipit cumque sed nemo doloribus voluptatibus facere? Facere voluptates ab, ratione consectetur veniam blanditiis quas fugiat nesciunt non, esse voluptatibus. Provident eius esse reiciendis, quibusdam obcaecati quam ipsum dignissimos optio corporis fuga debitis. Minus quasi accusantium ad? Modi natus aliquam libero nisi? Accusantium nesciunt illum id nobis corrupti, minus voluptates sed esse quisquam velit, est porro sint maxime ipsum. Odio earum accusantium dolorum nesciunt non debitis iste eligendi! Ipsum voluptatibus quae aliquam expedita., ipsum dolor sit amet consectetur adipisicing elit. Architecto dolores beatae minus ipsam vitae, voluptatem obcaecati doloremque ea ullam quidem ratione maxime natus aspernatur doloribus animi. Saepe totam cum soluta libero deserunt exercitationem illo adipisci suscipit enim et quo porro, quis consectetur itaque provident at, odio labore nam voluptas harum autem in? Labore nesciunt quod aperiam numquam quam iure ipsam minus natus est. Mollitia magnam dolores nesciunt animi atque et in consequuntur fugiat eius labore? Porro sequi unde cupiditate eaque.
+        </p>
+
+        <div class="image-gallery">
+            <div class="img-wrapper">
+                <img src="hm1.webp" alt="Home Image 1">
+            </div>
+            <div class="img-wrapper">
+                <img src="hm2.webp" alt="Home Image 2">
+            </div>
+            <div class="img-wrapper">
+                <img src="/zomato/images/OFFER3.webp" alt="Home Image 3">
+            </div>
+            <div class="img-wrapper">
+                <img src="hm4.webp" alt="Home Image 4">
+            </div>
+        </div>
+
+        <p class="content-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel a, consequuntur deserunt, reiciendis possimus ipsa vitae eveniet dolores nobis, nam obcaecati. Molestias pariatur expedita non eligendi id, magni aut explicabo labore, nulla esse sint deserunt enim, itaque voluptatem harum vel ad similique! Aliquid facere corrupti dolores ducimus dolorem pariatur ex? ipsum dolor sit amet consectetur adipisicing elit. Natus eius voluptatem corporis maiores fugiat amet officiis ea asperiores deserunt cum? Atque perferendis modi vitae perspiciatis nemo sapiente culpa impedit, odio odit quibusdam iure, minima dolor officiis ipsam, dolorum nobis quaerat laudantium ipsum illo sequi? Itaque, non. Magnam iure vel nesciunt.
+        </p>
+
+    </div>
+
+</body>
+
+</html>
